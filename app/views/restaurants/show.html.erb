@@ -1,0 +1,8 @@
+<h1><%= @restaurant.name%></h1>
+<div class="details_info">
+  <p><%= @restaurant.address %></p>
+  <p><%= @restaurant.phone_number if @restaurant.phone_number.present?%></p>
+
+</div>
+
+<%= link_to "Back to list", restaurants_path %>
